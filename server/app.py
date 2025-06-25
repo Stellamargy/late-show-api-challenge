@@ -1,6 +1,6 @@
 from flask import Flask
 from .config import Config
-from models import Appearance,Guest,User,Episode,db
+from server.models import Appearance,Guest,User,Episode,db
 from flask_migrate import Migrate
 
 #Create a Flask app instance
