@@ -1,4 +1,4 @@
-from .database import db
+from server import bcrypt,db
 class Episode(db.Model):
     #table names
     __tablename__ = 'episodes'

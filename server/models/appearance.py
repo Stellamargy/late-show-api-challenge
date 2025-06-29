@@ -1,4 +1,4 @@
-from .database import db
+from server import bcrypt,db
 from sqlalchemy.orm import validates
 from sqlalchemy import CheckConstraint
 class Appearance(db.Model):

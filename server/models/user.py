@@ -1,6 +1,4 @@
-from .database import db
-# from server.utilis import password
-from server.extensions import bcrypt
+from server import bcrypt,db
 
 
 class User(db.Model):
@@ -17,7 +15,8 @@ class User(db.Model):
 
     @property
     def password(self):
-        raise AttributeError('password is private attribute')
+        # raise AttributeError('password is private attribute')
+        return self._password
         
 
     @password.setter
