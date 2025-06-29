@@ -9,8 +9,9 @@ python-dotenv = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
 psycopg2 = "*"
+flask-bcrypt = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.12.10"

@@ -1,7 +1,7 @@
 from .database import db
 class Episode(db.Model):
     #table names
-    _tablename__ = 'episodes'
+    __tablename__ = 'episodes'
     #columns and their respective constraints
     id = db.Column(db.Integer, primary_key=True)
     date = db.Column(db.Date, nullable=False)

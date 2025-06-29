@@ -4,8 +4,5 @@ import os
 load_dotenv()
 
 class Config:
-    
-    FLASK_APP=os.getenv('FLASK_APP')
-    FLASK_DEBUG=bool(os.getenv('FLASK_DEBUG'))
     SQLALCHEMY_DATABASE_URI=os.getenv('DATABASE_URI')
     SQLALCHEMY_TRACK_MODIFICATIONS=False
